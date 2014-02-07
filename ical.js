@@ -56,7 +56,7 @@
   var addTZ = function(dt, name, params){
     var p = parseParams(params);
 
-    if (params && p){
+    if (params && p && p.TZID){
       dt[name].tz = p.TZID
     }
 
